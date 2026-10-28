@@ -99,12 +99,15 @@ function finishGame() {
   if (pendingGameTitle) {
     pendingGameTitle.textContent = emailStatus === "sending"
       ? "Пять раундов пройдены"
-      : emailStatus === "sent" ? "Заявка отправлена" : "Игра завершена";
+      : emailStatus === "sent" ? "Заявка отправлена"
+      : emailStatus === "error" ? "Игра завершена · отправка не удалась"
+      : "Игра завершена";
   }
   if (pendingGameHint) {
     pendingGameHint.textContent = emailStatus === "sending"
       ? "Заявка всё ещё отправляется — результаты уже ниже."
-      : emailStatus === "sent" ? "Время каждого раунда:" : "Время каждого раунда:";
+      : emailStatus === "error" ? "Проверьте сообщение об ошибке формы и попробуйте отправить снова."
+      : "Время каждого уровня:";
   }
   if (!gameResults) return;
   gameResults.replaceChildren();
@@ -170,7 +173,6 @@ if (contactForm && formFeedback) {
     formFeedback.classList.remove("error");
     startGame("sending");
     submitButton.disabled = true;
-    let submissionSucceeded = false;
 
     try {
       const response = await fetch("https://formsubmit.co/ajax/andrey.tatark@gmail.com", {
@@ -189,7 +191,6 @@ if (contactForm && formFeedback) {
       contactForm.reset();
       if (messageCount) messageCount.textContent = "0 / 300";
       formFeedback.textContent = "Заявка отправлена! Спасибо за предложение.";
-      submissionSucceeded = true;
       emailStatus = "sent";
       if (pendingGameTitle) pendingGameTitle.textContent = gameActive ? "Заявка отправлена" : "Заявка отправлена · игра завершена";
       if (pendingGameHint && gameActive) pendingGameHint.textContent = "Письмо отправлено. Можете закончить раунд и посмотреть результаты.";
@@ -198,10 +199,10 @@ if (contactForm && formFeedback) {
         ? "Не удалось подключиться к сервису отправки. Проверьте интернет и откройте опубликованную версию сайта."
         : `${error.message} Попробуйте ещё раз или напишите мне на почту.`;
       formFeedback.classList.add("error");
-      gameActive = false;
-      clearInterval(gameClock);
+      emailStatus = "error";
+      if (pendingGameTitle) pendingGameTitle.textContent = "Не удалось отправить заявку";
+      if (pendingGameHint) pendingGameHint.textContent = "Игра остаётся доступной. Проверьте форму и попробуйте ещё раз.";
     } finally {
-      if (!submissionSucceeded && pendingGame) pendingGame.hidden = true;
       submitButton.disabled = false;
       submitButton.innerHTML = buttonLabel;
     }

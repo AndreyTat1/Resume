@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta
+      name="description"
+      content="Андрей - Fullstack-разработчик. PHP, Yii2, MySQL, HTML, CSS, JavaScript."
+    />
+    <title>Андрей - Fullstack-разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="На главную"
+        ><span class="brand-mark">A</span
+        ><span>andrey<span class="brand-dot">.</span>dev</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#education">Образование</a>
+        <a class="nav-contact" href="#contacts">Связаться</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <div class="availability">
+            <span class="status-dot"></span> Рассматриваю предложения
+          </div>
+          <p class="eyebrow">FULLSTACK DEVELOPER · PHP / JAVASCRIPT</p>
+          <h1>
+            Привет, я <span class="gradient-text">Андрей.</span
+            ><br />Разрабатываю веб-приложения<br />от интерфейса до серверной
+            логики.
+          </h1>
+          <p class="hero-description">
+            Участововал в разработке, поддержке и улучшения B2B-сервиса для
+            оптовых клиентов: добавлял функции на PHP/Yii2 и дорабатывал
+            интерфейсы.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Посмотреть проекты <span>↘</span></a
+            >
+            <a class="button button-secondary" href="#contacts"
+              >Связаться со мной</a
+            >
+          </div>
+          <div class="hero-meta">
+            <span class="desc"
+              ><i class="meta-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                  <circle cx="8" cy="6" r="2" />
+                  <circle cx="16" cy="12" r="2" /></svg
+              ></i>
+              Frontend + Backend</span
+            ><span class="desc"
+              ><i class="meta-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="6" width="18" height="14" rx="2" />
+                  <path d="M8 6V4h8v2M3 11h18M10 11v2h4v-2" /></svg
+              ></i>
+              Полная занятость</span
+            >
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Декоративная иллюстрация кода">
+          <div class="visual-orbit orbit-a"></div>
+          <div class="visual-orbit orbit-b"></div>
+          <div class="code-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>developer.php</span
+              ><span class="window-lock"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3" /></svg
+              ></span>
+            </div>
+            <div class="code-content">
+              <div>
+                <span class="line-number">01</span
+                ><span class="code-purple">&lt;?php</span>
+              </div>
+              <div>
+                <span class="line-number">02</span
+                ><span class="code-purple">class</span>
+                <span class="code-blue">Developer</span>
+              </div>
+              <div><span class="line-number">03</span>{</div>
+              <div>
+                <span class="line-number">04</span>&nbsp;&nbsp;<span
+                  class="code-purple"
+                  >public string</span
+                >
+                <span class="code-orange">$focus</span> =
+              </div>
+              <div>
+                <span class="line-number">05</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="code-green"
+                  >'build &amp; improve';</span
+                >
+              </div>
+              <div><span class="line-number">06</span></div>
+              <div>
+                <span class="line-number">07</span>&nbsp;&nbsp;<span
+                  class="code-purple"
+                  >public function</span
+                >
+                <span class="code-blue">create</span>()
+              </div>
+              <div><span class="line-number">08</span>&nbsp;&nbsp;{</div>
+              <div>
+                <span class="line-number">09</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="code-purple"
+                  >return</span
+                >
+                <span class="code-green">'useful products';</span>
+              </div>
+              <div><span class="line-number">10</span>&nbsp;&nbsp;}</div>
+              <div><span class="line-number">11</span>}</div>
+              <div>
+                <span class="line-number">12</span
+                ><span class="code-cursor"></span>
+              </div>
+            </div>
+            <div class="code-footer">
+              <span><span class="footer-green"></span> Ready to build</span
+              ><span>UTF-8&nbsp; · &nbsp;PHP</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-php"><span>P</span> PHP / Yii2</div>
+          <div class="floating-chip chip-db">
+            <span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path
+                  d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"
+                /></svg
+            ></span>
+            MySQL
+          </div>
+          <div class="floating-chip chip-js"><span>JS</span> JavaScript</div>
+        </div>
+        <a class="scroll-hint" href="#about"
+          ><span class="scroll-line"></span> Листайте вниз</a
+        >
+      </section>
+
+      <section class="section-wrap section-block" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ОБО МНЕ</p>
+          <h2>
+            Разбираюсь в задаче.<br /><span class="muted-heading"
+              >Довожу до результата.</span
+            >
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Мне интересно создавать не только отдельные элементы интерфейса,
+              но и понимать, как работает продукт целиком. В работе совмещал
+              frontend и backend задачи, взаимодействовал с базой данных и
+              подключался к серверной части.
+            </p>
+            <p>
+              Ищу команду, где смогу развиваться вместе с проектом: брать задачи
+              связанные с визуальным представлением и логикой функций.
+            </p>
+          </div>
+          <div class="principles">
+            <div class="principle">
+              <span class="principle-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 19 10 13l4 3 6-8M14 8h6v6" /></svg
+              ></span>
+              <div>
+                <h3>Системный подход</h3>
+                <p>
+                  Смотрю на задачу целиком - от интерфейса до хранения данных.
+                </p>
+              </div>
+            </div>
+            <div class="principle">
+              <span class="principle-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="4" width="6" height="6" rx="2" />
+                  <rect x="14" y="4" width="6" height="6" rx="2" />
+                  <rect x="4" y="14" width="6" height="6" rx="2" />
+                  <rect x="14" y="14" width="6" height="6" rx="2" /></svg
+              ></span>
+              <div>
+                <h3>Самостоятельность</h3>
+                <p>
+                  Самостоятельно разрабатывал функции сервиса: создавал
+                  страницы, писал логику и следил что бы данные доходили
+                  правильные и без ошибок.
+                </p>
+              </div>
+            </div>
+            <div class="principle">
+              <span class="principle-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"
+                  />
+                  <path
+                    d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Постоянное развитие</h3>
+                <p>
+                  Практикуюсь на собственных проектах и изучаю новые
+                  инструменты. На данный момент есть интерес к React и
+                  C-подобным языкам.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">02 / ОПЫТ</p>
+          <h2>Опыт работы</h2>
+          <p class="section-lead">
+            Практика разработки и поддержки B2B-продукта.
+          </p>
+        </div>
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <span class="experience-type">КОММЕРЧЕСКИЙ ОПЫТ</span>
+              <h3>Fullstack-разработчик</h3>
+              <p class="company">B2B-проект · PHP / Yii2</p>
+            </div>
+            <span class="experience-badge">Frontend + Backend</span>
+          </div>
+          <p class="experience-summary">
+            Работал над проектом самостоятельно, совмещая задачи по
+            пользовательскому интерфейсу, серверной логике и данным.
+          </p>
+          <div class="experience-details">
+            <div>
+              <span class="detail-mark">01</span>
+              <p>
+                Верстал множество страниц, добавлял сложные анимации, фильтры,
+                интерактивные элементы.
+              </p>
+            </div>
+            <div>
+              <span class="detail-mark">02</span>
+              <p>
+                Разработка и прддержка backend логики, реализации бизнес-логики,
+                поддержка интеграций со сторонними сервисами (Яндекс, СДЭК, ПЭК
+                и др.). Тестирование реализованного функционала.
+              </p>
+            </div>
+            <div>
+              <span class="detail-mark">03</span>
+              <p>
+                Работа с базой данных MySQL: запросы, данные, оптимизация
+                запросов и исправление проблем.
+              </p>
+            </div>
+            <div>
+              <span class="detail-mark">04</span>
+              <p>
+                Базовые задачи по серверной части, поиск и устранение ошибок.
+              </p>
+            </div>
+            <div>
+              <span class="detail-mark">05</span>
+              <p>
+                Проверка изменений, регрессионное и ручное тестирование
+                функциональности.
+              </p>
+            </div>
+          </div>
+          <div class="work-entry">
+            <div class="work-entry-heading">
+              <h4>Место работы</h4>
+            </div>
+            <div class="work-entry-fields">
+              <div class="work-entry-field">
+                <span>Компания</span>
+                <p class="work-entry-value">ООО ИТОТ</p>
+              </div>
+              <div class="work-entry-field">
+                <span>Должность</span>
+                <p class="work-entry-value">Разработчик</p>
+              </div>
+              <div class="work-entry-field">
+                <span>Период работы</span>
+                <p class="work-entry-value">2024-2026</p>
+              </div>
+              <div class="work-entry-field work-entry-field-wide">
+                <span>Чем занимался</span>
+                <p class="work-entry-value">
+                  Выполнял работы по frontend и backend части. Так же занимался
+                  небольшой настройкой серверной частью.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-wrap section-block" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">03 / СТЕК</p>
+          <h2>Инструменты и технологии</h2>
+          <p class="section-lead">Технологии, с которыми работал в проектах.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon purple"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="6" rx="2" />
+                  <rect x="3" y="14" width="18" height="6" rx="2" />
+                  <path d="M7 7h.01M7 17h.01M11 7h7M11 17h7" /></svg></span
+              ><span class="skill-count">01</span>
+            </div>
+            <h3>Backend</h3>
+            <p>Серверная логика и работа с данными</p>
+            <div class="tags">
+              <span>PHP</span><span>Yii2</span><span>REST API</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon blue"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path
+                    d="M3 9h18M7 6.5h.01M10 6.5h.01M8 13l-2 2 2 2M12 17h4"
+                  /></svg></span
+              ><span class="skill-count">02</span>
+            </div>
+            <h3>Frontend</h3>
+            <p>Структура, стили и интерактивность интерфейса</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span
+              ><span>Адаптивная верстка</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon orange"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path
+                    d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"
+                  /></svg></span
+              ><span class="skill-count">03</span>
+            </div>
+            <h3>Базы данных</h3>
+            <p>Хранение, выборка и обновление информации</p>
+            <div class="tags"><span>MySQL</span><span>SQL</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <span class="skill-icon green"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14 6 18 2l4 4-4 4M13 7l4 4-8 8a3 3 0 0 1-4-4l8-8ZM4 20l2-2"
+                  />
+                  <path d="m14 4 6 6" /></svg></span
+              ><span class="skill-count">04</span>
+            </div>
+            <h3>Инструменты</h3>
+            <p>Рабочий процесс и окружение разработки</p>
+            <div class="tags">
+              <span>Git</span><span>Linux</span><span>Тестирование</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">04 / ОБРАЗОВАНИЕ</p>
+          <h2>Где учился</h2>
+        </div>
+        <div class="education-list">
+          <article class="education-item">
+            <div class="education-symbol">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7" />
+              </svg>
+            </div>
+            <div class="education-main">
+              <span class="education-kind">ОБРАЗОВАНИЕ</span>
+              <h3>
+                Южно-Российский государственный политехнический университет
+                (НПИ) имени М.И. Платова
+              </h3>
+              <p>Информатика и вычислительная техника</p>
+              <span class="education-hint">2020-2024</span>
+            </div>
+          </article>
+          <article class="education-item">
+            <div class="education-symbol">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <div class="education-main">
+              <span class="education-kind">КУРСЫ</span>
+              <h3>Тестировщик</h3>
+              <p>Проходил курсы по тестированию WEB-приложений</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block" id="contacts">
+        <div class="contact-panel">
+          <div class="contact-decoration decoration-one"></div>
+          <div class="contact-decoration decoration-two"></div>
+          <div class="contact-layout">
+            <div class="contact-content">
+              <p class="eyebrow">05 / КОНТАКТЫ</p>
+              <h2>Напишите<br /><span class="gradient-text">мне</span></h2>
+              <p>
+                Открыт к предложениям о работе и сотрудничестве. Выберите
+                удобный способ связи или отправьте предложение через форму.
+              </p>
+              <div class="contact-links">
+                <a
+                  href="https://t.me/Andreydm1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>Telegram</span><strong>@Andreydm1</strong>
+                </a>
+                <a href="tel:+79286200262">
+                  <span>Телефон</span><strong>8 (928) 620-02-62</strong>
+                </a>
+                <a href="mailto:andrey.tatark@gmail.com">
+                  <span>Электронная почта</span
+                  ><strong>andrey.tatark@gmail.com</strong>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <h3>Предложение о работе</h3>
+              <p>
+                Если хотите, воспользуйтесь формой с предложением - ваша заявка
+                придёт мне на почту.
+              </p>
+              <label for="contact-name">Ваше имя</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                maxlength="80"
+                placeholder="Как к вам обращаться"
+              />
+              <label for="contact-email">Ваша почта для ответа</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                maxlength="120"
+                placeholder="name@example.com"
+              />
+              <label for="contact-message"
+                >Предложение <span>до 300 символов</span></label
+              >
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                maxlength="300"
+                required
+                placeholder="Коротко опишите вакансию или предложение"
+              ></textarea>
+              <div class="form-bottom">
+                <span id="message-count">0 / 300</span>
+                <button class="button button-primary" type="submit">
+                  Отправить
+                </button>
+              </div>
+              <p
+                class="form-feedback"
+                id="form-feedback"
+                role="status"
+                aria-live="polite"
+              ></p>
+              <input
+                type="hidden"
+                name="_subject"
+                value="Предложение с сайта-портфолио"
+              />
+              <input
+                type="text"
+                name="_honey"
+                class="form-honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand footer-brand" href="#home"
+        ><span class="brand-mark">A</span
+        ><span>andrey<span class="brand-dot">.</span>dev</span></a
+      >
+      <a href="#home" class="back-top">Наверх</a
+      ><span class="copyright">© <span id="year"></span> Андрей</span>
+    </footer>
+  </body>
+</html>

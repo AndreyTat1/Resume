@@ -46,7 +46,7 @@
           <div class="availability">
             <span class="status-dot"></span> Рассматриваю предложения
           </div>
-          <p class="eyebrow">FULLSTACK DEVELOPER · PHP / JAVASCRIPT</p>
+          <p class="eyebrow">FULLSTACK DEVELOPER</p>
           <h1>
             Привет, я <span class="gradient-text">Андрей.</span
             ><br />Разрабатываю веб-приложения<br />от интерфейса до серверной
@@ -510,6 +510,26 @@
                 <button class="button button-primary" type="submit">
                   Отправить
                 </button>
+              </div>
+              <div class="pending-game" id="pending-game" hidden>
+                <div class="pending-game-copy">
+                  <strong id="pending-game-title">Заявка отправляется</strong>
+                  <span id="pending-game-hint"
+                  >В каждом из пяти уровней поймайте пять точек. Таймер считает время уровня.</span
+                  >
+                </div>
+                <div class="game-stage" id="game-stage">
+                  <button
+                    class="game-target"
+                    id="game-target"
+                    type="button"
+                    aria-label="Поймать точку"
+                  ></button>
+                </div>
+                <span class="game-score" id="game-score" aria-live="polite"
+                  >Уровень 1 / 5 · Точки 0 / 5 · 0.0 с</span
+                >
+                <div class="game-results" id="game-results" hidden></div>
               </div>
               <p
                 class="form-feedback"

@@ -1620,6 +1620,12 @@ button {
   gap: 12px;
   margin-top: 12px;
 }
+.form-stay-note {
+  margin: 9px 0 0;
+  color: #8491ad;
+  font-size: 10px;
+  line-height: 1.5;
+}
 .form-bottom > span {
   color: #8491ad;
   font-size: 10px;

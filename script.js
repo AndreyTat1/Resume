@@ -48,6 +48,7 @@ if (contactForm && formFeedback) {
     try {
       const response = await fetch("https://formsubmit.co/ajax/andrey.tatark@gmail.com", {
         method: "POST",
+        keepalive: true,
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
